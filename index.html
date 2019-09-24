@@ -15,7 +15,7 @@
    position:fixed;
    top:0;
    left:0;
-   width:230px;
+   width:280px;
    height: 100vh;
   }
 
@@ -23,6 +23,12 @@
     height: 100vh;
     overflow-x: auto;
     list-style: none;
+    padding: 0.8em;
+    margin: 0;
+  }
+
+  section h2 {
+    margin-top: 3em;
   }
 
   nav a {
@@ -30,7 +36,7 @@
 }
 
   main{
-   margin-left: 230px;
+   margin-left: 280px;
   }
 
   .icon-info:before {
@@ -276,7 +282,7 @@ body {
 
       <div class="bd-example">
 <label for="inputPassword5">Password</label>
-<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<input type="password"  class="form-control" aria-describedby="passwordHelpBlock">
 <small id="passwordHelpBlock" class="form-text text-muted">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </small>
@@ -355,6 +361,24 @@ body {
    </section>
    <section class="priority" id="TextInput">
       <h2>Text Input</h2>
+
+
+      <h3>Default</h3>
+      <div class="bd-example">
+      <label for="inputPassword5">Username</label>
+      <input class="form-control" aria-describedby="passwordHelpBlock">
+      </div>
+
+
+
+      <h3>Password</h3>
+      <div class="bd-example">
+<label for="inputPassword5">Password</label>
+<input type="password" class="form-control" aria-describedby="passwordHelpBlock">
+</div>
+
+
+
    </section>
    <section  class="priority" id="TextLink">
       <h2>Text Link</h2>
