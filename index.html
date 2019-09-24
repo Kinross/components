@@ -5,9 +5,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-
   <style>
 
+  .priority h2 {
+    color: #FF007F;
+  }
 
   nav {
    position:fixed;
@@ -16,14 +18,130 @@
    width:230px;
    height: 100vh;
   }
+
   nav ul {
     height: 100vh;
     overflow-x: auto;
+    list-style: none;
   }
+
   main{
    margin-left: 230px;
   }
 
+  .icon-info:before {
+    content: url("icon.svg");
+    display:inline-block;
+     width:16px;
+     height:16px;
+     margin:4px 0;
+  }
+
+.do {
+  text-decoration: none;
+  border-bottom: 7px solid #28a745;
+}
+
+.dont {
+  text-decoration: none;
+  border-bottom: 7px solid #dc3545;
+}
+
+/* BOOTSTRAP */
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+.form-text {
+  color: #dc3545;
+
+}
+  .btn {
+      display: inline-block;
+      font-weight: 400;
+      color: #212529;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 3rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+
+  .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    color: #007bff;
+    background-color: #fff;
+    border-color: #007bff;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
   </style>
 
@@ -99,44 +217,75 @@
    <section id="Badges">
       <h2>Badges</h2>
    </section>
-   <section id="Buttons">
+   <section class="priority" id="Buttons">
       <h2>Buttons</h2>
+
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+
+      <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+
+
+      <button type="button" class="btn btn-primary">Primary<span class="icon-info"></span></button>
+
+      <button type="button" class="btn btn-primary"><span class="icon-info">Primary<span class="icon-info"></span></button>
+
+      <button type="button" class="btn btn-success"><span class="icon-info">Success</button>
+
+      <button type="button" class="btn btn-danger"><span class="icon-info"></button>
+
+
+
    </section>
    <section id="ButtonToolbar">
       <h2>Button Toolbar</h2>
    </section>
-   <section id="Cards">
+   <section class="priority" id="Cards">
       <h2>Cards</h2>
    </section>
-   <section id="Carousel">
+   <section class="priority" id="Carousel">
       <h2>Carousel</h2>
    </section>
-   <section  id="Checkboxes">
+   <section class="priority" id="Checkboxes">
       <h2>Checkboxes</h2>
    </section>
    <section id="DatePicker">
       <h2>Date Picker</h2>
-      <h3>Do.</h3>
+      <h3 class="do" >Do.</h3>
       <p>Use when one date is needed to be picked. e.g. monday</p>
-      <h3>Don't.</h3>
+      <h3 class="dont" >Don't.</h3>
       <p>Use when a range of dates is needed to be picked. e.g. monday to friday</p>
    </section>
    <section id="DraggableAndResizablePanel">
       <h2>Draggable and Resizable Panel</h2>
    </section>
-   <section id="HelpText">
+   <section class="priority" id="HelpText">
       <h2>Help Text</h2>
+
+      <div class="bd-example">
+<label for="inputPassword5">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<small id="passwordHelpBlock" class="form-text text-muted">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</small>
+</div>
+
+
    </section>
-   <section id="Lists">
+   <section class="priority" id="Lists">
       <h2>Lists</h2>
    </section>
    <section id="LoadingBar">
       <h2>Loading Bar</h2>
    </section>
-   <section id="ModalFooter">
+   <section class="priority" id="ModalFooter">
       <h2>Modal - Footer</h2>
    </section>
-   <section id="ModalHeader">
+   <section class="priority" id="ModalHeader">
       <h2>Modal - Header</h2>
    </section>
    <section id="MoreLessToggle">
@@ -148,7 +297,7 @@
    <section id="NavigationBars">
       <h2>Navigation Bars</h2>
    </section>
-   <section id="Pagination">
+   <section class="priority" id="Pagination">
       <h2>Pagination</h2>
    </section>
    <section id="ProgressBar">
@@ -166,13 +315,13 @@
    <section id="Scrollbar">
       <h2>Scrollbar</h2>
    </section>
-   <section id="SelectMenu">
+   <section class="priority" id="SelectMenu">
       <h2>Select Menu</h2>
    </section>
-   <section id="Spinners">
+   <section class="priority" id="Spinners">
       <h2>Spinners</h2>
    </section>
-   <section id="StepProgressBar">
+   <section class="priority" id="StepProgressBar">
       <h2>Step Progress Bar</h2>
    </section>
    <section id="StepperInput">
@@ -181,25 +330,25 @@
    <section id="Switch">
       <h2>Switch</h2>
    </section>
-   <section id="Tabs">
+   <section class="priority" id="Tabs">
       <h2>Tabs</h2>
    </section>
-   <section id="TabsBar">
+   <section class="priority" id="TabsBar">
       <h2>Tabs Bar</h2>
    </section>
-   <section id="TabsBarVertical">
+   <section class="priority" id="TabsBarVertical">
       <h2>Tabs Bar Vertical</h2>
    </section>
-   <section id="Tabs Vertical">
+   <section class="priority" id="Tabs Vertical">
       <h2>Tabs Vertical</h2>
    </section>
    <section id="Tags">
       <h2>Tags</h2>
    </section>
-   <section id="TextInput">
+   <section class="priority" id="TextInput">
       <h2>Text Input</h2>
    </section>
-   <section id="TextLink">
+   <section  class="priority" id="TextLink">
       <h2>Text Link</h2>
    </section>
    <section id="TextArea">
@@ -208,7 +357,7 @@
    <section id="Toasts">
       <h2>Toasts</h2>
    </section>
-   <section id="Tooltip">
+   <section class="priority" id="Tooltip">
       <h2>Tooltip</h2>
    </section>
    <section id="Validation">
