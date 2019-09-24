@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex">
   <style>
 
-  .priority h2 {
+  .priority h2 , nav .priority   {
     color: #FF007F;
   }
 
@@ -24,6 +24,10 @@
     overflow-x: auto;
     list-style: none;
   }
+
+  nav a {
+  color: #007bff;
+}
 
   main{
    margin-left: 230px;
@@ -45,6 +49,11 @@
 .dont {
   text-decoration: none;
   border-bottom: 7px solid #dc3545;
+}
+
+h2 {
+  text-decoration: none;
+  border-top: 1px solid lightgray;
 }
 
 /* BOOTSTRAP */
@@ -125,10 +134,6 @@ body {
     line-height: 1.5;
 }
 
-
-
-
-
 .form-control {
     display: block;
     width: 100%;
@@ -155,42 +160,42 @@ body {
     <li><a href="#AutocompleteTextinput">Autocomplete Text Input</a></li>
     <li><a href="#Avatars">Avatars</a></li>
     <li><a href="#Badges">Badges</a></li>
-    <li><a href="#Buttons">Buttons</a></li>
+    <li><a href="#Buttons"  class="priority" >Buttons</a></li>
     <li><a href="#ButtonToolbar">Button Toolbar</a></li>
-    <li><a href="#Cards">Cards</a></li>
-    <li><a href="#Carousel">Carousel</a></li>
-    <li><a href="#Checkboxes">Checkboxes</a></li>
+    <li><a href="#Cards"  class="priority" >Cards</a></li>
+    <li><a href="#Carousel"  class="priority" >Carousel</a></li>
+    <li><a href="#Checkboxes"  class="priority" >Checkboxes</a></li>
     <li><a href="#DatePicker">Date Picker</a></li>
     <li><a href="#DraggableAndResizablePanel">Draggable and Resizable Panel</a></li>
-    <li><a href="#HelpText">Help Text</a></li>
-    <li><a href="#Lists">Lists</a></li>
+    <li><a href="#HelpText"  class="priority" >Help Text</a></li>
+    <li><a href="#Lists"  class="priority" >Lists</a></li>
     <li><a href="#LoadingBar">Loading Bar</a></li>
-    <li><a href="#ModalFooter">Modal - Footer</a></li>
-    <li><a href="#ModalHeader">Modal - Header</a></li>
+    <li><a href="#ModalFooter"  class="priority" >Modal - Footer</a></li>
+    <li><a href="#ModalHeader"  class="priority" >Modal - Header</a></li>
     <li><a href="#MoreLessToggle">More/Less Toggle</a></li>
     <li><a href="#MultiSelectMenu">Multi-select Menu</a></li>
     <li><a href="#NavigationBars">Navigation Bars</a></li>
-    <li><a href="#Pagination">Pagination</a></li>
+    <li><a href="#Pagination"  class="priority" >Pagination</a></li>
     <li><a href="#ProgressBar">Progress Bar</a></li>
     <li><a href="#Radios">Radios</a></li>
     <li><a href="#RangeInput">Range Input</a></li>
     <li><a href="#RangePicker">Range Picker</a></li>
     <li><a href="#Scrollbar">Scrollbar</a></li>
-    <li><a href="#SelectMenu">Select Menu</a></li>
-    <li><a href="#Spinners">Spinners</a></li>
-    <li><a href="#StepProgressBar">Step Progress Bar</a></li>
+    <li><a href="#SelectMenu"  class="priority" >Select Menu</a></li>
+    <li><a href="#Spinners"  class="priority" >Spinners</a></li>
+    <li><a href="#StepProgressBar"  class="priority" >Step Progress Bar</a></li>
     <li><a href="#StepperInput">Stepper Input</a></li>
     <li><a href="#Switch">Switch</a></li>
-    <li><a href="#Tabs">Tabs</a></li>
-    <li><a href="#TabsBar">Tabs Bar</a></li>
-    <li><a href="#TabsBarVertical">Tabs Bar Vertical</a></li>
-    <li><a href="#Tabs Vertical">Tabs Vertical</a></li>
+    <li><a href="#Tabs"  class="priority" >Tabs</a></li>
+    <li><a href="#TabsBar"  class="priority" >Tabs Bar</a></li>
+    <li><a href="#TabsBarVertical"  class="priority" >Tabs Bar Vertical</a></li>
+    <li><a href="#Tabs Vertical"  class="priority" >Tabs Vertical</a></li>
     <li><a href="#Tags">Tags</a></li>
-    <li><a href="#TextInput">Text Input</a></li>
-    <li><a href="#TextLink">Text Link</a></li>
+    <li><a href="#TextInput"  class="priority" >Text Input</a></li>
+    <li><a href="#TextLink"  class="priority" >Text Link</a></li>
     <li><a href="#TextArea">Text-area</a></li>
     <li><a href="#Toasts">Toasts</a></li>
-    <li><a href="#Tooltip">Tooltip</a></li>
+    <li><a href="#Tooltip"  class="priority" >Tooltip</a></li>
     <li><a href="#Validation">Validation</a></li>
 
   </ul>
@@ -220,16 +225,19 @@ body {
    <section class="priority" id="Buttons">
       <h2>Buttons</h2>
 
+      <h3>5 button skins</h3>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-success">Success</button>
       <button type="button" class="btn btn-danger">Danger</button>
       <button type="button" class="btn btn-link">Link</button>
 
-      <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+      <h3>5 button sizes</h3>
+      <button type="button" class="btn btn-primary btn-sm">Small button</button>
+      <button type="button" class="btn btn-primary">Default button</button>
       <button type="button" class="btn btn-primary btn-lg">Large button</button>
 
-
+      <h3>Button with icons</h3>
       <button type="button" class="btn btn-primary">Primary<span class="icon-info"></span></button>
 
       <button type="button" class="btn btn-primary"><span class="icon-info">Primary<span class="icon-info"></span></button>
